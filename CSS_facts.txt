@@ -1,0 +1,32 @@
+css resources:-
+
+1) for Units : https://css-tricks.com/css-font-size/#:~:text=Here's%20the%20scoop%3A%201em%20is,body%2C%20then%201em%20%3D%2020px.
+	rems and ems:https://www.youtube.com/watch?v=_-aDOAMmDHI
+
+px-used for fixed units
+keywords used for compound and mixed
+em-used for compunding effect
+rem-set root(html) and everything else will be relative to that
+
+-in terms of font size if a div is given 2 em it will look at it's parent and multiply it's font size with 2
+ but for padding and margins the font-size of the same div is referred and compounding happens based on that.
+  for eg:- div{ font-size : 2em; padding: 2em} then padding is actually 2em*2em = 4em.
+-same is not the case in rem. There it checks font size of root(html) and multiplies it.
+
+-for padding we generally use em so things grow proportionately
+- for margins we use rem so the spacing between divs is consistent
+- to make maths easier we set root elements font as 62.5% that makes it 10px and now it's easier to do calculations.
+
+-for width - % vw ch max-width
+-height - min height
+-media queries-em
+
+
+2)Inheritance in css
+-color is inherited 
+-form elements donot inherit colors 
+To make them inherit just write button, input{font:inherit}
+
+3)Cascade
+4)specificity
+5)layout:-grid flex
